@@ -1,0 +1,59 @@
+---
+title: Music
+description: Music
+---
+
+h1 Music
+nav
+  ul
+    li
+      = link_to "Mixes", "#mixes"
+    li
+      = link_to "Releases", "#releases"
+    li
+      = link_to "Songs", "#songs"
+    li
+      = link_to "Videos", "#videos"
+section id="mixes"
+  h1 Mixes
+  ul
+    - data.music.mixes.each do |mix|
+      li
+        | #{mix.artist} - #{mix.title} (#{mix.date})
+        - mix.files.each do |file|
+          | &nbsp;
+          = link_to "#{file.format}", "#{file.url}"
+section id="releases"
+  h1 Releases
+  ul
+    - data.music.releases.each do |release|
+      li
+        | #{release.artist} - #{release.title} (#{release.date})
+        - release.files.each do |file|
+          | &nbsp;
+          = link_to "#{file.format}", "#{file.url}"
+        ol
+          - release.tracks.each do |track|
+            li
+              | #{track.artist} - #{track.title}
+              - track.files.each do |file|
+                | &nbsp;
+                = link_to "#{file.format}", "#{file.url}"
+section id="songs"
+  h1 Songs
+  ul
+    - data.music.songs.each do |song|
+      li
+        | #{song.artist} - #{song.title} (#{song.date})
+        - song.files.each do |file|
+          | &nbsp;
+          = link_to "#{file.format}", "#{file.url}"
+section id="videos"
+  h1 Videos
+  ul
+    - data.music.videos.each do |video|
+      li
+        | #{video.artist} - #{video.title} (#{video.date})
+        - video.files.each do |file|
+          | &nbsp;
+          = link_to "#{file.format}", "#{file.url}"

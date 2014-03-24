@@ -1,0 +1,13 @@
+---
+title: Log
+description: Log
+---
+
+h1 Log
+- blog.articles.each do |article|
+  article
+    header
+      h1
+        = link_to "#{article.title}", "#{http_prefix}#{article.path}"
+      time datetime="#{article.date.strftime("%Y-%m-%d %H:%M:%S%z")}" #{article.date.strftime("%b %e %Y")}
+    #{article.body}

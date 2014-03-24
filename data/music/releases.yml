@@ -1,0 +1,33 @@
+- artist: "Error 800"
+  date: "2014"
+  files:
+    - format: "tar.gz"
+      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.tar.gz"
+    - format: "zip"
+      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.zip"
+  title: "Test EP"
+  tracks:
+    - artist: "Error 800"
+      files:
+        - format: "ogg"
+          url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.ogg"
+        - format: "mp3"
+          url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.mp3"
+      title: "Track 1"
+      tracknumber: "1"
+    - artist: "Error 800"
+      files:
+        - format: "ogg"
+          url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.ogg"
+        - format: "mp3"
+          url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.mp3"
+      title: "Track 2"
+      tracknumber: "2"
+    - artist: "Error 800"
+      files:
+        - format: "ogg"
+          url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.ogg"
+        - format: "mp3"
+          url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.mp3"
+      title: "Track 3"
+      tracknumber: "3"

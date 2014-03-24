@@ -1,0 +1,14 @@
+- wrap_layout :default do
+  article
+    header
+      h1 #{current_article.title}
+      time datetime="#{current_article.date}" #{current_article.date.strftime("%b %e %Y")}
+    == yield
+    footer
+      ul
+        - if current_article.previous_article
+          li
+            = link_to "Previous: #{current_article.previous_article.title}", "#{http_prefix}#{current_article.previous_article.path}"
+        - if current_article.next_article
+          li
+            = link_to "Next: #{current_article.next_article.title}", "#{http_prefix}#{current_article.next_article.path}"

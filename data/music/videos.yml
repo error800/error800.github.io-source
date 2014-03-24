@@ -1,0 +1,8 @@
+- artist: "Error 800"
+  date: "2012"
+  title: "Experiments"
+  files:
+    - format: "webm"
+      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.webm"
+    - format: "mkv"
+      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.mkv"

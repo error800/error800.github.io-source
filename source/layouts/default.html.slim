@@ -1,0 +1,20 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width"
+    meta name="description" content="#{current_page.data.description}"
+    = favicon_tag "favicon.png"
+    title Error 800 - #{current_page.data.title}
+
+  body
+    header
+      = partial "header"
+    nav
+      = partial "nav"
+    hr
+    main
+      = yield
+    hr
+    footer
+      = partial "footer"

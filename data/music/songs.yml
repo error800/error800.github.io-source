@@ -1,0 +1,8 @@
+- artist: "Error 800"
+  date: "2014"
+  title: "Untitled"
+  files:
+    - format: "ogg"
+      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.ogg"
+    - format: "mp3"
+      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.mp3"
