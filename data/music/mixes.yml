@@ -3,6 +3,6 @@
   title: "Data Journey Mix"
   files:
     - format: "ogg"
-      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.ogg"
+      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/data.ogg"
     - format: "mp3"
-      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/test.mp3"
+      url: "https://raw.githubusercontent.com/error800/error800.github.io-media/master/data.mp3"
